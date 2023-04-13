@@ -19,17 +19,7 @@ local sirenEvent = ac.AudioEvent("cars/siren/siren", true)
 sirenEvent.volume = ac.getAudioVolume('main') * volumes.siren
 sirenEvent:setPosition(sirenPos)
 
--- THIS IS SCUFFED
--- There doesn't seem to be a proper way to directly 
--- manipulate the already loaded soundbank by the game, 
--- so I copied the car's soundbank loaded it only to 
--- access the horn audio event.
-
--- Suggestion: add a horn sound event into the siren.bank. 
--- That way i'll only need to load 1 soundbank, and I can
--- access both events at the same time :)
-ac.loadSoundbank("horn/axis_ford_gt_cop.bank", "horn/GUIDs.txt") 
-local hornEvent = ac.AudioEvent("cars/axis_ford_gt_cop/horn", true)
+local hornEvent = ac.AudioEvent("cars/siren/horn", true)
 hornEvent.volume = ac.getAudioVolume('main') * volumes.horn
 hornEvent:setPosition(sirenPos)
 

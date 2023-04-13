@@ -1,1 +1,2 @@
 {9ef18a9f-9fc8-4bd4-8efd-135b91171384} event:/cars/siren/siren
+{05c1be93-316d-4550-b398-c29fd777577d} event:/cars/siren/horn
