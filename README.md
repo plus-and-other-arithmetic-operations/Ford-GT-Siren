@@ -1,5 +1,7 @@
 # Ford-GT-Siren
 
+Pro-bono project made for Axis' Ford GT police cruiser mod.
+
 ## Setup
 
 Add the siren folder into the car's extension folder.
